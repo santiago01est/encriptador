@@ -22,6 +22,24 @@ img {
 
 }
 
+.alert-info {
+    padding: 20px;
+    background-color: #f0f8ff;
+    color: #000;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+  }
+  
+  .alert-info button {
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
 
 /* Moobile First responsive design*/
 
@@ -60,6 +78,13 @@ textarea {
 
 .info {
     text-align: center;
+}
+
+.copy{
+    display: none;
+    font-weight: bold;
+    color: #6c757d;
+    cursor: pointer;
 }
 
 .help {
@@ -128,6 +153,10 @@ textarea {
     /* Centrar contenido del div */
 
 }
+#resultado{
+    padding: 30px;
+   
+}
 
 .resultado h3 {
     padding: 10px;
@@ -162,20 +191,16 @@ textarea {
         margin: 0 auto;
     }
 
-    img {
-        height: 60px;
-        width: auto;
-
-    }
-
+  
     .resultado {
+        margin: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         position: absolute;
         width: 400px;
-        height: 944px;
+        height: 800px;
         right: 100px;
         top: 40px;
         /* White */
@@ -185,7 +210,10 @@ textarea {
         border-radius: 32px;
     }
 
-
+    .resultado img{
+        width: 250px;
+        height: 200px;
+    }
 
 
 }

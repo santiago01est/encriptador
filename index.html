@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width"> 
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -31,8 +31,11 @@
         }
         function encriptar() {
             var encryptedPhrase = document.getElementById("inputPalabra").value;
-            var encryptedPhraseelement=document.getElementById("inputPalabra");
-            encryptedPhraseelement.value="";
+            var encryptedPhraseelement = document.getElementById("inputPalabra");
+            var copy = document.getElementById("copy");
+            copy.style.display = "block";
+            encryptedPhraseelement.value = "";
+
             let textoCifrado = encryptedPhrase
                 .replace(/e/gi, "enter")
                 .replace(/i/gi, "imes")
@@ -47,6 +50,7 @@
                 document.getElementById("resultado").innerHTML = "Ingresa el texto que deseas encriptar o desencriptar";
                 swal("Ooops!", "Debes ingresar un texto", "warning");
             }
+
         }
         function copyText() {
             var paragraph = document.getElementById("resultado");
@@ -81,10 +85,12 @@
             <textarea type="text" id="inputPalabra" placeholder="Ingresa el texto aquí"></textarea>
         </div>
 
+
         <div class="info">
             <i class="fa-sharp fa-solid fa-circle-info"></i>
             <span class="help">ingresar letras minusculas y sin acentos</span>
         </div>
+
 
         <br>
         <div class="container-btn">
@@ -95,15 +101,16 @@
         </div>
         <br>
         <div class="resultado">
+            <img src="muneco.png" alt="imagen decorativa">
             <h3 id="text-info">Ningún mensaje fue encontrado</h3>
             <p id="resultado">escribe una frase para encriptar o desencriptar</p>
-        </div>
-        <br>
-        <div class="container-btn">
-            <div class="button-container">
-                <button class="gray-button_copy" onclick="copyText()">Copiar</button>
+            <div id="copy" class="copy">
+                <i class="fa-solid fa-copy"></i>
+                <span onclick="copyText()">Copiar</span>
             </div>
         </div>
+        <br>
+
 
 
     </section>
