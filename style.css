@@ -1,11 +1,6 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:300,400,500";
 
 
-
-
-
-/* Moobile First responsive design*/
-
 header {
     background-color: #fff;
     padding: 8px;
@@ -13,9 +8,12 @@ header {
     margin: 0 auto;
 }
 
-.logo {
+.logo h1{
     position: relative;
     margin: 0 auto;
+    color: #073566;
+    font-size: 60px;
+    font-weight: bold;
 }
 
 img {
@@ -23,6 +21,10 @@ img {
     width: auto;
 
 }
+
+
+/* Moobile First responsive design*/
+
 
 body {
     width: auto;
@@ -114,8 +116,10 @@ textarea {
 
 .resultado {
     display: block;
-    background-color: rgb(185, 182, 182);
-    border-radius: 12px;
+    background: #FFFFFF;
+    /* shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 32px;
     width: 300px;
     /* Ancho del div */
     margin: 0 auto;
@@ -136,5 +140,52 @@ textarea {
 .resultado p {
     padding: 10px;
     color: #494b4d;
+
+}
+
+/* Desktop */
+@media screen and (min-width: 1360px) {
+    * {
+        box-sizing: inherit;
+    }
+
+
+    header {
+        padding: 20px 0;
+        width: 940px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .logo {
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    img {
+        height: 60px;
+        width: auto;
+
+    }
+
+    .resultado {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 400px;
+        height: 944px;
+        right: 100px;
+        top: 40px;
+        /* White */
+        background: #FFFFFF;
+        /* shadow */
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.5);
+        border-radius: 32px;
+    }
+
+
+
 
 }
