@@ -1,150 +1,8 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:300,400,500";
 
-@media screen and (min-width: 992px) {
-    * {
-        box-sizing: inherit;
-    }
-
-    /* Moobile First responsive design*/
-
-    header {
-        background-color: #fff;
-        padding: 8px;
-        width: auto;
-        margin: 0 auto;
-    }
-
-    .logo {
-        width: 940px;
-        position: relative;
-        margin: 0 auto;
-    }
-
-    img {
-        height: 40px;
-        width: auto;
-
-    }
-
-    body {
-        width: 940px;
-        margin: 0 auto;
-        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-        line-height: 1.5;
-        padding: 2em 1em;
-    }
 
 
-    .container {
-        display: flex;
-        justify-content: center;
-        /* Centrar horizontalmente */
-        align-items: center;
-        /* Centrar verticalmente */
-        height: 200px;
-        /* Establecer altura del contenedor */
-    }
 
-    textarea {
-        padding: 10px;
-        font-size: 16px;
-        justify-content: center;
-        border: none;
-        border-radius: 4px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        width: 300px;
-        height: 150px;
-        resize: none;
-    }
-
-    .info {
-        text-align: center;
-    }
-
-    .help {
-        font-size: 12px;
-        margin-top: 8px;
-        color: gray;
-    }
-
-    .container-btn {
-        display: block;
-        text-align: center;
-    }
-
-    .button-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .button-container button {
-        margin-bottom: 10px;
-        padding: 10px 20px;
-        font-size: 16px;
-        border: none;
-        border-radius: 4px;
-        color: #fff;
-        border-radius: 12px;
-        cursor: pointer;
-    }
-
-    .blue-button {
-        width: 200px;
-        height: 30px;
-        background-color: #007bff;
-        font-weight: bold;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    }
-
-    .gray-button {
-        background-color: #6c757d;
-        width: 200px;
-        height: 30px;
-        font-weight: bold;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    }
-
-    .gray-button_copy {
-        background-color: #6c757d;
-        width: 200px;
-        height: 30px;
-        font-weight: bold;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    }
-
-    .resultado {
-        display: block;
-        background-color: rgb(185, 182, 182);
-        border-radius: 12px;
-        width: 300px;
-        /* Ancho del div */
-        margin: 0 auto;
-        /* Centrar horizontalmente */
-        text-align: center;
-        /* Centrar contenido del div */
-
-    }
-
-    .resultado h3 {
-        padding: 10px;
-        height: auto;
-        font-weight: bold;
-        color: #404447;
-
-    }
-
-    .resultado p {
-        padding: 10px;
-        color: #494b4d;
-
-    }
-
-}
-
-* {
-    box-sizing: inherit;
-}
 
 /* Moobile First responsive design*/
 
@@ -156,7 +14,6 @@ header {
 }
 
 .logo {
-    width: 940px;
     position: relative;
     margin: 0 auto;
 }
@@ -169,10 +26,11 @@ img {
 
 body {
     width: auto;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 20px;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     line-height: 1.5;
-    padding: 2em 1em;
 }
 
 
