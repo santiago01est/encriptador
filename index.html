@@ -20,7 +20,6 @@
                 .replace(/ai/gi, "a")
                 .replace(/ober/gi, "o")
                 .replace(/ufat/gi, "u");
-
             if (encryptedPhrase.length != 0) {
                 document.getElementById("text-info").innerHTML = "Palabra Desencriptada";
                 document.getElementById("resultado").innerHTML = textoCifrado;
@@ -30,7 +29,6 @@
                 swal("Ooops!", "Debes ingresar un texto", "warning");
             }
         }
-
         function encriptar() {
             var encryptedPhrase = document.getElementById("inputPalabra").value;
             var encryptedPhraseelement=document.getElementById("inputPalabra");
@@ -41,7 +39,6 @@
                 .replace(/a/gi, "ai")
                 .replace(/o/gi, "ober")
                 .replace(/u/gi, "ufat");
-
             if (encryptedPhrase.length != 0) {
                 document.getElementById("text-info").innerHTML = "Palabra Encriptada";
                 document.getElementById("resultado").innerHTML = textoCifrado;
@@ -51,7 +48,6 @@
                 swal("Ooops!", "Debes ingresar un texto", "warning");
             }
         }
-
         function copyText() {
             var paragraph = document.getElementById("resultado");
 
@@ -76,7 +72,7 @@
 <body>
     <header>
         <div class="logo">
-            <h1><img src="../src/asset/img/aluralogo.png" alt="Logo de la empresa Alura"></h1>
+            <h1><img src="/asset/img/aluralogo.png" alt="Logo de la empresa Alura"></h1>
         </div>
     </header>
 
